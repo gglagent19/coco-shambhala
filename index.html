@@ -45,23 +45,28 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 /* ---------- elevation rail (signature) ---------- */
 #rail{position:fixed;right:26px;top:0;bottom:0;width:40px;z-index:900;
   display:flex;align-items:center;pointer-events:none}
-#rail .line{position:absolute;right:19px;top:12vh;bottom:12vh;width:1px;background:rgba(233,226,210,.22)}
-#rail .tick{position:absolute;right:14px;width:11px;height:1px;background:rgba(233,226,210,.35)}
+#rail .line{position:absolute;right:19px;top:12vh;bottom:12vh;width:1px;background:currentColor;opacity:.25}
+#rail .tick{position:absolute;right:14px;width:11px;height:1px;background:currentColor;opacity:.4}
 #rail .dot{position:absolute;right:15px;width:9px;height:9px;border-radius:50%;
   background:var(--laterite);top:12vh}
 #alt{position:fixed;right:56px;top:50%;transform:translateY(-50%);z-index:900;
   text-align:right;pointer-events:none}
-#alt .v{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.1em}
+#alt .v{font-family:'Space Mono',monospace;font-size:13px;letter-spacing:.1em;color:inherit}
 #alt .l{font-size:9px;letter-spacing:.3em;color:var(--palm);text-transform:uppercase}
 @media(max-width:760px){#rail,#alt{display:none}}
 
 /* ---------- nav ---------- */
 nav{position:fixed;top:0;left:0;right:0;z-index:1000;display:flex;
-  justify-content:space-between;align-items:center;padding:26px 40px;mix-blend-mode:difference}
-nav .wordmark{font-family:'Fraunces',serif;font-size:19px;letter-spacing:.06em}
+  justify-content:space-between;align-items:center;padding:22px 32px}
+nav .chip{display:flex;align-items:center;gap:26px;background:rgba(10,17,14,.42);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  border:1px solid rgba(233,226,210,.14);border-radius:44px;padding:12px 24px;color:#E9E2D2}
+nav .wordmark{font-family:'Fraunces',serif;font-size:19px;letter-spacing:.06em;color:#E9E2D2}
 nav .wordmark em{font-style:italic;color:inherit}
-nav .book{border:1px solid rgba(233,226,210,.6);border-radius:40px;padding:10px 22px;
+nav .book{border:1px solid rgba(233,226,210,.55);border-radius:40px;padding:9px 20px;
   font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+nav a{font-size:12px;letter-spacing:.18em;text-transform:uppercase}
+nav .wordmark{text-transform:none;letter-spacing:.06em;font-size:19px}
 
 /* ---------- hero ---------- */
 #hero{position:relative;height:100vh;overflow:hidden}
