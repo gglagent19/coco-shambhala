@@ -67,7 +67,7 @@ nav .book{border:1px solid rgba(233,226,210,.6);border-radius:40px;padding:10px 
 #hero{position:relative;height:100vh;overflow:hidden}
 #hero .media{position:absolute;inset:0;will-change:transform}
 #hero .media::after{content:"";position:absolute;inset:0;
-  background:linear-gradient(180deg,rgba(18,33,29,.55),rgba(18,33,29,.15) 45%,rgba(18,33,29,.75))}
+  background:linear-gradient(180deg,rgba(18,33,29,.45),rgba(18,33,29,.08) 45%,rgba(18,33,29,.55))}
 #hero .title{position:absolute;left:0;right:0;bottom:17vh;text-align:center;z-index:5}
 #hero h1{font-family:'Fraunces',serif;font-weight:300;font-size:clamp(52px,10.5vw,168px);
   line-height:.95;letter-spacing:.01em}
@@ -193,7 +193,7 @@ nav .book{border:1px solid rgba(233,226,210,.6);border-radius:40px;padding:10px 
 
 <section id="hero">
   <div class="media" id="heromedia">
-    <video src="assets/hero-loop.mp4" autoplay muted loop playsinline poster="https://cocoshambhala.com/wp-content/uploads/2023/11/Main-image-1-1-e1720067150796-1500x663.jpg" style="width:100%;height:100%;object-fit:cover"></video>
+    <video id="hv" src="assets/property-scrub.mp4" muted playsinline preload="auto" poster="https://cocoshambhala.com/wp-content/uploads/2023/11/Main-image-1-1-e1720067150796-1500x663.jpg" style="width:100%;height:100%;object-fit:cover"></video>
   </div>
   <div class="mono coord-tag" id="coordtag">15°58′ N — 73°32′ E · Sindhudurg · Filmed at the villas</div>
   <div class="title">
@@ -278,20 +278,20 @@ nav .book{border:1px solid rgba(233,226,210,.6);border-radius:40px;padding:10px 
 
 <section id="falls">
   <div class="pin" style="height:100vh;overflow:hidden;position:relative">
-    <video id="wf" src="assets/property-scrub.mp4" muted playsinline preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
+    <video id="wf" src="assets/waterfall-scrub.mp4" muted playsinline preload="auto" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"></video>
     <div style="position:absolute;inset:0;background:rgba(8,14,12,.32)"></div>
     <div class="fcap" style="position:absolute;left:8vw;bottom:12vh;z-index:3;max-width:720px;color:#E9E2D2">
       <div class="fline" id="fl1" style="position:absolute;bottom:0;left:0;opacity:0;transform:translateY(30px)">
-        <h3 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.1">This is the coast<br>it stands <em style="font-style:italic;color:#D9A441">on</em></h3>
-        <p style="margin-top:14px;color:rgba(233,226,210,.85);line-height:1.7;max-width:48ch">Turquoise coves, laterite headlands, and a beach that is usually yours alone.</p></div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.1">Seventy metres is not<br>a straight line <em style="font-style:italic;color:#D9A441">down</em></h3>
+        <p style="margin-top:14px;color:rgba(233,226,210,.85);line-height:1.7;max-width:48ch">The hill folds. The path folds with it, and follows the sound of water.</p></div>
       <div class="fline" id="fl2" style="position:absolute;bottom:0;left:0;opacity:0;transform:translateY(30px)">
-        <h3 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.1">Four villas hidden<br>in the <em style="font-style:italic;color:#D9A441">canopy</em></h3>
-        <p style="margin-top:14px;color:rgba(233,226,210,.85);line-height:1.7;max-width:48ch">Red clay roofs in twelve acres of jungle, and every villa holds its own infinity edge over the sea.</p></div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.1">The water knows the way<br>to the <em style="font-style:italic;color:#D9A441">sea</em></h3>
+        <p style="margin-top:14px;color:rgba(233,226,210,.85);line-height:1.7;max-width:48ch">Monsoon falls feed the jungle pools; the pools feed the streams; the streams reach Bhogave before you do.</p></div>
       <div class="fline" id="fl3" style="position:absolute;bottom:0;left:0;opacity:0;transform:translateY(30px)">
-        <h3 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.1">At sunset, the table<br>is <em style="font-style:italic;color:#D9A441">set</em></h3>
-        <p style="margin-top:14px;color:rgba(233,226,210,.85);line-height:1.7;max-width:48ch">Dinner on the open pavilion, as the fishing-boat lights come out along the horizon.</p></div>
+        <h3 style="font-family:'Fraunces',serif;font-weight:300;font-size:clamp(30px,4.4vw,64px);line-height:1.1">Follow it <em style="font-style:italic;color:#D9A441">all the way</em></h3>
+        <p style="margin-top:14px;color:rgba(233,226,210,.85);line-height:1.7;max-width:48ch">The rest of the descent is yours: sand, salt, and the villa light coming on above.</p></div>
     </div>
-    <div class="mono" id="fprog" style="position:absolute;right:40px;bottom:12vh;z-index:3;color:#E9E2D2">FILMED AT THE VILLAS</div>
+    <div class="mono" id="fprog" style="position:absolute;right:40px;bottom:12vh;z-index:3;color:#E9E2D2">THE DESCENT, IN MOTION</div>
     <div style="position:absolute;left:8vw;right:8vw;top:8vh;z-index:3;height:1px;background:rgba(233,226,210,.25)"><i id="fbar" style="position:absolute;left:0;top:0;bottom:0;width:0;background:#D9A441;display:block"></i></div>
   </div>
 </section>
@@ -361,11 +361,23 @@ function intro(){
   gsap.to('#stemi',{top:'100%',duration:1.4,ease:'power2.inOut',repeat:-1},1.5);
 }
 
-/* hero scroll: image scales & drifts, title parallax up */
-gsap.to('#heromedia',{scale:1.22,yPercent:12,ease:'none',
-  scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
-gsap.to('#hero .title',{yPercent:-60,opacity:.15,ease:'none',
-  scrollTrigger:{trigger:'#hero',start:'top top',end:'bottom top',scrub:true}});
+/* HERO SCRUB: their film advances under your first scroll (pinned + lerped) */
+const hv=document.getElementById('hv');
+let hvReady=false,hvTarget=0,hvCur=0;
+hv.addEventListener('loadedmetadata',()=>{hvReady=true},{once:false});
+fetch('assets/property-scrub.mp4').then(r=>r.blob()).then(b=>{const t=hv.currentTime;hv.src=URL.createObjectURL(b);hv.currentTime=t;}).catch(()=>{});
+gsap.ticker.add(()=>{if(!hvReady||!hv.duration)return;
+  hvCur+=(hvTarget-hvCur)*0.18;
+  const t=Math.max(0,Math.min(hv.duration-.05,hvCur));
+  if(Math.abs(hv.currentTime-t)>0.01) hv.currentTime=t;});
+ScrollTrigger.create({trigger:'#hero',start:'top top',end:'+=2400',pin:true,scrub:true,
+  onUpdate:st=>{const p=st.progress;
+    if(hvReady&&hv.duration) hvTarget=p*hv.duration;
+    gsap.set('#hero .title',{opacity:Math.max(0,1-p*3.2),y:-p*260});
+    gsap.set('#cue',{opacity:Math.max(0,.9-p*4)});
+    const tag=document.getElementById('coordtag');
+    if(tag) tag.textContent = p<.03 ? "15°58′ N — 73°32′ E · Sindhudurg · Filmed at the villas"
+      : "FILM · "+Math.round(p*100)+"% · SCROLL TO PLAY";}});
 
 /* THE DESCENT: bg night -> sand as you approach the villas/beach, back to night */
 const bgTo=(el,bg,fg)=>ScrollTrigger.create({trigger:el,start:'top 62%',end:'top 20%',
@@ -437,7 +449,7 @@ gsap.fromTo('#cta h2',{opacity:0,y:80},{opacity:1,y:0,duration:1,ease:'power3.ou
 const wf=document.getElementById('wf');
 let wfReady=false,wfTarget=0,wfCur=0;
 wf.addEventListener('loadedmetadata',()=>{wfReady=true},{once:false});
-fetch('assets/property-scrub.mp4').then(r=>r.blob()).then(b=>{wf.src=URL.createObjectURL(b);
+fetch('assets/waterfall-scrub.mp4').then(r=>r.blob()).then(b=>{wf.src=URL.createObjectURL(b);
   wf.addEventListener('loadedmetadata',()=>{wfReady=true},{once:true});}).catch(()=>{});
 gsap.ticker.add(()=>{if(!wfReady||!wf.duration)return;
   wfCur+=(wfTarget-wfCur)*0.18;
