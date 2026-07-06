@@ -416,9 +416,9 @@ const bgTo=(el,bg,fg)=>ScrollTrigger.create({trigger:el,start:'top 62%',end:'top
   onEnter:()=>gsap.to('body',{backgroundColor:bg,color:fg,duration:1.1,ease:'power2.out'}),
   onLeaveBack:()=>gsap.to('body',{backgroundColor:'#12211D',color:'#E9E2D2',duration:1.1})});
 bgTo('#villas','#E9E2D2','#1A2420');
-ScrollTrigger.create({trigger:'#exp',start:'top 55%',
-  onEnter:()=>gsap.to('body',{backgroundColor:'#12211D',color:'#E9E2D2',duration:1.2}),
-  onLeaveBack:()=>gsap.to('body',{backgroundColor:'#E9E2D2',color:'#1A2420',duration:1.2})});
+ScrollTrigger.create({trigger:'#villas',start:'top top',end:()=>'+='+hlen(),
+  onLeave:()=>gsap.to('body',{backgroundColor:'#12211D',color:'#E9E2D2',duration:1.2}),
+  onEnterBack:()=>gsap.to('body',{backgroundColor:'#E9E2D2',color:'#1A2420',duration:1.2})});
 
 
 /* experience cards: subtle scale-in as each stacks */
